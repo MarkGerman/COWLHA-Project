@@ -24,7 +24,6 @@ export default function Register() {
     return (
         <GuestLayout>
             <Head title="Register" />
-
             <form onSubmit={submit}>
                 <div>
                     <InputLabel htmlFor="name" value="Name" />

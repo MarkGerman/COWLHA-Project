@@ -24,7 +24,6 @@ export default function Login({ status, canResetPassword }) {
     return (
         <GuestLayout>
             <Head title="Log in" />
-
             {status && (
                 <div className="mb-4 text-sm font-medium text-green-600">
                     {status}
@@ -74,7 +73,7 @@ export default function Login({ status, canResetPassword }) {
                                 setData('remember', e.target.checked)
                             }
                         />
-                        <span className="ms-2 text-sm text-gray-600 dark:text-gray-400">
+                        <span className="ms-2 text-sm text-dark">
                             Remember me
                         </span>
                     </label>
@@ -84,7 +83,7 @@ export default function Login({ status, canResetPassword }) {
                     {canResetPassword && (
                         <Link
                             href={route('password.request')}
-                            className="rounded-md text-sm text-gray-600 underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:text-gray-400 dark:hover:text-gray-100 dark:focus:ring-offset-gray-800"
+                            className="rounded-md text-sm text-dark underline hover:text-dark focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:text-gray-400 dark:hover:text-gray-100 dark:focus:ring-offset-gray-800"
                         >
                             Forgot your password?
                         </Link>

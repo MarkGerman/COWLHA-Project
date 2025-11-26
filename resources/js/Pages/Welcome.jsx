@@ -15,12 +15,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
     return (
         <>
             <Head title="Welcome" />
-            <div className="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
+            <div className="text-black/50" style={{ background: '#c3cbd6' }}>
                 <div className="relative flex min-h-screen flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
                     <div className="absolute inset-0">
-                        <header className="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
-                            <div className="flex lg:col-start-2 lg:justify-start">
-                               <h1>COWLHA</h1>
+                        <header className="flex items-center justify-between lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 px-6 pt-3 bg-white dark:bg-gray-800 w-full">
+                            <div className="">
+                               <h2>COWLHA</h2>
                             </div>
                             <nav className="">
                                 {auth.user ? (
@@ -38,12 +38,6 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                         >
                                             Log in
                                         </Link>
-                                        <Link
-                                            href={route('register')}
-                                            className="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                        >
-                                            Register
-                                        </Link>
                                     </>
                                 )}
                             </nav>
@@ -52,11 +46,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                         <main className="mt-6">
                             <div className="flex flex-col items-center justify-center">
                                 <div className="flex flex-col items-center justify-center bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                                    <h2 className="text-3xl font-bold text-black dark:text-white">
-                                        Welcome to COWLHA
+                                    <h2 className="text-3xl font-bold" style={{ color: '#1d3124' }}>
+                                        Welcome!
                                     </h2>
-                                    <p className="mt-4 text-lg text-black/70 dark:text-white/70">
-                                        A modern administration system.
+                                    <p className="mt-4 text-lg text-black/70">
+                                        Help Us Safeguard Lives and Empower Women
+                                        Living with HIV/AIDS
                                     </p>
                                 </div>
                                 <div

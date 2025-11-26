@@ -1,5 +1,5 @@
 export default function ApplicationLogo(props) {
     return (
-        <h1 className="text-white">COWLHA</h1>
+        <h2 className="border-0" style={{ color: '#76797eff' }}>COWLHA</h2>
     );
 }
